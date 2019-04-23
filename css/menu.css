@@ -11,7 +11,7 @@
 #navigation > li {
     float: left;
     height: 100%;
-    margin-right: 0.5em;
+    margin-right: 2em;
     padding: 0 1em;
 }
 
@@ -36,6 +36,7 @@
     background: #a40;
     position: absolute;
     top: -1000em;
+    box-shadow:0px 0px 10px 0px #000;
 }
 
 #navigation > li.sub ul li {
@@ -56,6 +57,6 @@
 }
 
 #navigation > li.sub:hover ul {
-    top: 3em;
+    top: 8em;
 }
 
