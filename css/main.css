@@ -119,6 +119,20 @@ ul.pagination:after{
     clear: both;
 }
 
+/*---------------------*/
+/* 修飾表單             */
+/*---------------------*/
+div.form{
+    border: 1px dotted #666;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+div.form span{
+    height:40px;
+    line-height:40px;
+}
+
 /*---------------------------*/
 /* 編排<表尾>區塊             */
 /*---------------------------*/
