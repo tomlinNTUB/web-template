@@ -133,6 +133,11 @@ div.form span{
     line-height:40px;
 }
 
+div.form select{
+    height:27px;
+    line-height:40px;
+}
+
 /*---------------------------*/
 /* 編排<表尾>區塊             */
 /*---------------------------*/
