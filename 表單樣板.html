@@ -102,22 +102,31 @@
         <div class="content">
             <h2>表單樣板</h2>
 
-            <form action = "#" method = "post">
+            <form action = "#" method = "get">
                 <div class="form">
                     <span class="name" style="width:80px;display:inline-block;">學號 </span>
-                    <span class="value"><input type="text" name="stuno" maxlength="8" pattern="\d{6,}" title="至少6個數字" required></span>
+                    <span class="value">
+                        <input type="text" name="stuno" maxlength="8" pattern="\d{6,}" title="至少6個數字" required>
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">姓名 </span>
-                    <span class="value"><input type="text" name="name" placeholder="例:王小明" required></span>
+                    <span class="value">
+                        <input type="text" name="name" required>
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">身份證號 </span>
-                    <span class="value"><input type="text" name="id" placeholder="例:A123456789" pattern="[A-Z]{1}\d{9}" title="1碼大寫英文及9碼數字"></span>
+                    <span class="value">
+                        <input type="text" name="id" pattern="[A-Z]{1}\d{9}" title="1碼大寫英文及9碼數字">
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">性別  </span>
-                    <span class="value"><input type="radio" name="gender" value="M">男 <input type="radio" name="gender" value="F" checked>女 </span>
+                    <span class="value">
+                        <input type="radio" name="gender" value="M">男 
+                        <input type="radio" name="gender" value="F" checked>女 
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">科別 </span>
@@ -135,7 +144,9 @@
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">年齡  </span>
-                    <span class="value"><input type="number" name="age" min="15" max="50" placeholder="15~50"></span>
+                    <span class="value">
+                        <input type="number" name="age" min="15" max="50" placeholder="15~50">
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">專長 </span>
@@ -147,15 +158,21 @@
                     <br/> 
 
                     <span class="name" style="width:80px;display:inline-block;">密碼 </span>
-                    <span class="value"> <input type="password" name="pw1" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文" placeholder="至少8碼,包含數字及大寫英文" required></span>
+                    <span class="value"> 
+                        <input type="password" name="pw1" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文">
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">確認密碼 </span>
-                    <span class="value"> <input type="password" name="pw2" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文" placeholder="至少8碼,包含數字及大寫英文" required></span>
+                    <span class="value"> 
+                        <input type="password" name="pw2" placeholder="再輸入一次密碼">
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;">密碼提示 </span>
-                    <span class="value"> <input type="text" name="hint" pattern=".{10,}" title="至少10個字" placeholder="至少10個字"></span>
+                    <span class="value"> 
+                        <input type="text" name="text" placeholder="例:小白的生日">
+                    </span>
                     <br/>
 
                     <span class="name" style="width:80px;display:inline-block;"></span>
