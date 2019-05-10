@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>測試網頁</title>
+<!-- 連結思源中文及css -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+<link href="css/menu.css" rel="stylesheet"/>  
+<link href="css/main.css" rel="stylesheet"/>      
+<!------------------------->
+</head>
+   
+<body>
+    <!--**************************-->
+    <div class="container">    
+        <!--~~~~~~~~~~~~~~~~~-->
+        <div class="header">           
+        </div>        
+        
+        <!--~~~~~~~~~~~~~~~~~-->        
+        <ul id="navigation">        
+            <li><a href="/">主頁</a></li>            
+            
+            <li class="sub">         
+                <a href="#">客戶</a>          
+                <ul>          
+                    <li><a href="/customer/add/form">新增</a></li>
+                    <li><a href="/customer/remove/form">刪除</a></li>
+                    <li><a href="/customer/update/getOldData">更新</a></li>   
+                    <li><a href="/customer/query/form">查詢</a></li>     
+                    <li><a href="/customer/list">清單</a></li>   
+                    <li><a href="/customer/page/1">分頁</a></li>                    
+                </ul>
+            </li>
+            
+            <li class="sub">         
+                <a href="#">產品</a>          
+                <ul>          
+                    <li><a href="/product/add/form">新增</a></li>
+                    <li><a href="/product/remove/form">刪除</a></li>
+                    <li><a href="/product/update/getOldData">更新</a></li>   
+                    <li><a href="/product/query/form">查詢</a></li>  
+                    <li><a href="/product/list">清單</a></li>  
+                    <li><a href="/product/page/1">分頁</a></li>                    
+                </ul>
+            </li>   
+            
+            <li class="sub">         
+                <a href="#">供應商</a>          
+                <ul>          
+                    <li><a href="/supplier/add/form">新增</a></li>
+                    <li><a href="/supplier/remove/form">刪除</a></li>
+                    <li><a href="/supplier/update/getOldData">更新</a></li>   
+                    <li><a href="/supplier/query/form">查詢</a></li>
+                    <li><a href="/supplier/list">清單</a></li> 
+                    <li><a href="/supplier/page/1">分頁</a></li>                    
+                </ul>
+            </li>                     
+         
+         
+            <li class="sub">         
+                <a href="#">員工</a>          
+                <ul>          
+                    <li><a href="/employee/add/form">新增</a></li>
+                    <li><a href="/employee/remove/form">刪除</a></li>
+                    <li><a href="/employee/update/getOldData">更新</a></li>   
+                    <li><a href="/employee/query/form">查詢</a></li> 
+                    <li><a href="/employee/list">清單</a></li>  
+                    <li><a href="/employee/page/1">分頁</a></li>                    
+                </ul>
+            </li>  
+            
+            <li class="sub">         
+                <a href="#">日常作業</a>          
+                <ul>          
+                    <li><a href="/import/form">進貨</a></li>
+                    <li><a href="/export/form">銷貨</a></li>
+                    <li><a href="/inventory/form">盤點</a></li>          
+                </ul>
+            </li>             
+                    
+            <li class="sub">         
+                <a href="#">報表</a>          
+                <ul>          
+                    <li><a href="/reports/import">進貨報表</a></li>
+                    <li><a href="/reports/export">銷貨報表</a></li>
+                    <li><a href="/reports/inventory">庫存報表</a></li>          
+                </ul>
+            </li> 
+            
+            <li class="sub">         
+                <a href="#">使用者</a>          
+                <ul>          
+                    <li><a href="/login">登入</a></li>
+                    <li><a href="/logout">登出</a></li>         
+                </ul>
+            </li>             
+        
+        </ul>
+        
+        <!--~~~~~~~~~~~~~~~~~--> 
+        <div class="content">
+            <h2>表單樣板</h2>
+
+            <form action = "#" method = "post">
+                <div class="form">
+                    <span class="name" style="width:80px;display:inline-block;">學號 </span>
+                    <span class="value"><input type="text" name="stuno" maxlength="8" pattern="\d{6,}" title="至少6個數字" required></span>
+                    <br/>
+                                    
+                    <span class="name" style="width:80px;display:inline-block;">姓名 </span>
+                    <span class="value"><input type="text" name="name" placeholder="例:王小明" required></span>
+                    <br/>
+                    
+                    <span class="name" style="width:80px;display:inline-block;">身份證號 </span>
+                    <span class="value"><input type="text" name="id" placeholder="例:A123456789" pattern="[A-Z]{1}\d{9}" title="1碼大寫英文及9碼數字"></span>
+                    <br/>    
+                    
+                    <span class="name" style="width:80px;display:inline-block;">性別  </span>
+                    <span class="value"><input type="radio" name="gender" value="M">男 <input type="radio" name="gender" value="F" checked>女 </span>                    <br/>                                      
+            
+                    <span class="name" style="width:80px;display:inline-block;">科別 </span>
+                    <span class="value"> 
+                        <select name="department" >
+                            <option value="1">會計資訊</option>
+                            <option value="2">財務金融</option>
+                            <option value="3">財政稅務</option>
+                            <option value="4">國際商務</option>
+                            <option value="5">企業管理</option>
+                            <option value="6">資訊管理</option>
+                            <option value="7">應用外語</option>
+                        </select>
+                    </span>
+                    <br/>                     
+                                                        
+                    <span class="name" style="width:80px;display:inline-block;">年齡  </span>
+                    <span class="value"><input type="number" name="age" min="15" max="50" placeholder="15~50"></span>
+                    <br/>  
+
+                    <span class="name" style="width:80px;display:inline-block;">專長 </span>
+                    <span class="value"> 
+                        <input type="checkbox" name="exper1" value="1">程式設計
+                        <input type="checkbox" name="exper2" value="2">美工美編
+                        <input type="checkbox" name="exper3" value="3">文案編寫
+                    </span>
+                    <br/> 
+                    
+                    <span class="name" style="width:80px;display:inline-block;">密碼 </span>
+                    <span class="value"> <input type="password" name="pw1" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文" placeholder="至少8碼,包含數字及大寫英文" required></span>
+                    <br/>    
+                    
+                    <span class="name" style="width:80px;display:inline-block;">確認密碼 </span>
+                    <span class="value"> <input type="password" name="pw2" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文" placeholder="至少8碼,包含數字及大寫英文" required></span>
+                    <br/>                                      
+                    
+                    <span class="name" style="width:80px;display:inline-block;">密碼提示 </span>
+                    <span class="value"> <input type="text" name="hint" pattern=".{10,}" title="至少10個字" placeholder="至少10個字"></span>
+                    <br/>                     
+                                                        
+                    <span class="name" style="width:80px;display:inline-block;"></span>
+                    <span class="value"><input type="submit" value="新增" style="width:80px"></span>    
+                </div>    
+            </form>      
+               
+        </div>       
+        
+        <!--~~~~~~~~~~~~~~~~~--> 
+        <div class="footer">
+            NTUB imd, 2019.    
+        </div>  
+    </div>
+    <!--**************************-->    
+</body>
+   
+</html>
