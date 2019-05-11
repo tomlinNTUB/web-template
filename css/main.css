@@ -138,6 +138,13 @@ div.form select{
     line-height:40px;
 }
 
+div.form span.name{
+    width:80px;
+    display:inline-block;
+    text-align:right;
+    padding-right:5px;	
+}
+
 /*---------------------------*/
 /* 編排<表尾>區塊             */
 /*---------------------------*/
