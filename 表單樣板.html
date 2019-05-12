@@ -102,7 +102,7 @@
         <div class="content">
             <h2>表單樣板</h2>
 
-            <form action = "#" method = "get">
+            <form onsubmit="return checkPW()" action="#" method="get">
                 <div class="form">
                     <span class="name">學號</span>
                     <span class="value">
@@ -165,13 +165,13 @@
 
                     <span class="name">密碼</span>
                     <span class="value"> 
-                        <input type="password" name="pw1" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文">
+                        <input type="password" name="pw1" id="pw1" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="至少8碼,其中至少包含1碼數字及1碼大寫英文">
                     </span>
                     <br/>
 
                     <span class="name">確認密碼</span>
                     <span class="value"> 
-                        <input type="password" name="pw2" placeholder="再輸入一次密碼">
+                        <input type="password" name="pw2" id="pw2" placeholder="再輸入一次密碼">
                     </span>
                     <br/>
 
@@ -180,7 +180,7 @@
                         <input type="text" name="text" placeholder="例:小白的生日">
                     </span>
                     <br/>
-
+                    
                     <span class="name"></span>
                     <span class="value"><input type="submit" value="新增" style="width:80px"></span>
                 </div>
@@ -194,6 +194,22 @@
         </div>  
     </div>
     <!--**************************-->    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+    <script>
+		function checkPW(){
+		    var pw1 = document.getElementById("pw1").value;
+		    var pw2 = document.getElementById("pw2").value;
+			
+		    if (pw1!=pw2) {
+				swal('輸入錯誤', '[密碼]與[確認密碼]輸入的內容不同!', 'error');
+			    return false;
+		    }else{
+				return true;	
+			}
+		}
+	</script>    
+   <!--**************************-->       
 </body>
    
 </html>
