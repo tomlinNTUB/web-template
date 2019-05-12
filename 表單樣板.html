@@ -197,18 +197,18 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
    
     <script>
-		function checkPW(){
-		    var pw1 = document.getElementById("pw1").value;
-		    var pw2 = document.getElementById("pw2").value;
+        function checkPW(){
+            var pw1 = document.getElementById("pw1").value;
+            var pw2 = document.getElementById("pw2").value;
 			
-		    if (pw1!=pw2) {
-				swal('輸入錯誤', '[密碼]與[確認密碼]輸入的內容不同!', 'error');
-			    return false;
-		    }else{
-				return true;	
-			}
-		}
-	</script>    
+            if (pw1!=pw2) {
+                swal('輸入錯誤', '[密碼]與[確認密碼]輸入的內容不同!', 'error');
+                return false;
+            }else{
+                return true;	
+            }
+        }
+    </script>    
    <!--**************************-->       
 </body>
    
